@@ -12,7 +12,7 @@
 */
 Auth::routes();
 
-Route::get('accueil', function () {
+Route::get('/', function () {
 	return redirect('/login');
 })->name('accueil');
 
