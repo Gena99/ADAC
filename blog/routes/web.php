@@ -10,22 +10,20 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-Auth::routes();
 
 Route::get('/', function () {
-	return redirect('/login');
-})->name('login');
-
-Route::get('/backerror', function () {
-	return redirect()->back();
-})->name('backerror');
-
-
-Route::get('accueil', function () {
-	return view('accueil');
+	return view('welcome');
 });
 
-//route::get('/','TestController@index');
+/*
+ Route::get('/backerror', function () {
+    return redirect()->back();
+})->name('backerror');
+*/
+
+Route::get('accueil', function () {
+    return view('accueil');
+});
 
 Auth::routes();
 
