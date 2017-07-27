@@ -13,7 +13,17 @@ class CreateRessourcesTable extends Migration
      */
     public function up()
     {
-        //
+        {
+            {
+                Schema::create('ressources', function (Blueprint $table) {
+                    $table->increments('id');
+                    $table->datetime('date_ajout');
+                    $table->string('texte');
+                    $table->string('categorie')->nullable();
+                    $table->timestamps();
+                });
+            }
+        }
     }
 
     /**
@@ -23,6 +33,6 @@ class CreateRessourcesTable extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('ressources');
     }
 }

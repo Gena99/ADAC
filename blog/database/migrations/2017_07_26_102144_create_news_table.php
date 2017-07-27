@@ -13,18 +13,17 @@ class CreateNewsTable extends Migration
      */
     public function up()
     {
-        {
-            Schema::create('users', function (Blueprint $table) {
-                $table->increments('id');
-                $table->string('titre');
-                $table->string('texte');
-                $table->boolean('evenement');
-                $table->datetime('date');
-                $table->datetime('date_publi');
 
-                $table->timestamps();
-            });
-        }
+        Schema::create('news', function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('titre');
+            $table->string('texte');
+            $table->boolean('evenement');
+            $table->datetime('date');
+            $table->datetime('date_publi');
+
+            $table->timestamps();
+        });
     }
 
     /**
@@ -34,6 +33,6 @@ class CreateNewsTable extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('news');
     }
 }

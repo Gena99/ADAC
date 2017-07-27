@@ -14,15 +14,19 @@ Auth::routes();
 
 Route::get('/', function () {
 	return redirect('/login');
-})->name('accueil');
+})->name('login');
 
 Route::get('/backerror', function () {
 	return redirect()->back();
 })->name('backerror');
 
-Route::get('/', function () {
-	return view('welcome');
-});
+
 Route::get('accueil', function () {
 	return view('accueil');
 });
+
+//route::get('/','TestController@index');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
