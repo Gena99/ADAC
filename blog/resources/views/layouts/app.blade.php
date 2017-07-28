@@ -33,7 +33,7 @@
 
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ url('/') }}">
-                        <img src="" class="logomasphere" alt="">
+                        <img src="" class="" alt="">
                         <!--{{ config('app.name', 'Laravel') }}-->
                     </a>
                 </div>

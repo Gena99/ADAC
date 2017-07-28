@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class PartionsTableSeeder extends Seeder
+class PartitionsTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -11,11 +11,11 @@ class PartionsTableSeeder extends Seeder
      */
     public function run()
     {
-    	DB::table('partions')->insert([
+    	DB::table('partitions')->insert([
     		'artiste' => 'Paul Young',
     		'titre' => 'ok',
     		'fichier' =>'blues',
     		]);
     }
 }
-}
+

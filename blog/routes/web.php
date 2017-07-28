@@ -22,9 +22,13 @@ Route::get('/', function () {
 */
 
 Route::get('accueil', function () {
-    return view('accueil');
+	return view('accueil');
 });
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/partitions', function () {
+    return view('partitions');
+});
