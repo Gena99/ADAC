@@ -22,8 +22,9 @@ Route::get('/', function () {
 */
 
 Route::get('accueil', function () {
-    return view('accueil');
+	return view('accueil');
 });
+
 
 Auth::routes();
 
