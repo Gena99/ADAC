@@ -15,6 +15,9 @@ class CreatePartitionsTable extends Migration
     {
         Schema::create('partitions', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('artiste');
+            $table->string('titre');
+            $table->string('fichier');
             $table->timestamps();
         });
     }
