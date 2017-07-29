@@ -29,6 +29,6 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/partitions', function () {
-    return view('partitions');
-});
+Route::get('/partitions', 'PartitionsController@index');
+
+Route:get('/partitions/telecharger/{fichier}', 'PartitionsController@telecharger');

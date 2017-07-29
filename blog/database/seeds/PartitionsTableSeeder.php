@@ -14,8 +14,14 @@ class PartitionsTableSeeder extends Seeder
     	DB::table('partitions')->insert([
     		'artiste' => 'Paul Young',
     		'titre' => 'ok',
-    		'fichier' =>'blues',
+    		'fichier' =>'paulyoung-ok.pdf',
     		]);
+
+        DB::table('partitions')->insert([
+            'artiste' => 'Metallica',
+            'titre' => 'Nothing else matters',
+            'fichier' =>'metallica-nothingelsematters.pdf',
+        ]);
     }
 }
 
