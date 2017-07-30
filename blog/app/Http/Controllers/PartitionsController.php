@@ -84,4 +84,18 @@ class PartitionsController extends Controller
     {
         //
     }
+
+
+    /**
+     * @param Request $request
+     * @param $fichier
+     * @return \Symfony\Component\HttpFoundation\BinaryFileResponse
+     */
+    public function telecharger(Request $request, $fichier)
+    {
+        $pathToFile = public_path() . '/files/partitions/' . $fichier;
+
+        return response()->download($pathToFile);
+
+    }
 }

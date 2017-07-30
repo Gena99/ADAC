@@ -31,4 +31,4 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/partitions', 'PartitionsController@index');
 
-Route:get('/partitions/telecharger/{fichier}', 'PartitionsController@telecharger');
+Route::get('/partitions/telecharger/{fichier}', 'PartitionsController@telecharger');
