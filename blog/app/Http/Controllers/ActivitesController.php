@@ -3,9 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Partition;
 
-class PartitionsController extends Controller
+class ActivitesController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,9 +13,7 @@ class PartitionsController extends Controller
      */
     public function index()
     {
-        $partitions = Partition::all();
-        return view('partitions', ['partitions' => $partitions]);
-
+return view('activités');
     }
 
     /**
@@ -26,24 +23,24 @@ class PartitionsController extends Controller
      */
     public function create()
     {
-        return view('infos');
+        //
     }
 
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request $request
+     * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
     {
-        return 'Le nom est ' . $request->input('nom');
+        //
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  int $id
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
     public function show($id)
@@ -54,7 +51,7 @@ class PartitionsController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int $id
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
     public function edit($id)
@@ -65,8 +62,8 @@ class PartitionsController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request $request
-     * @param  int $id
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id)
@@ -77,25 +74,11 @@ class PartitionsController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int $id
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
     public function destroy($id)
     {
         //
-    }
-
-
-    /**
-     * @param Request $request
-     * @param $fichier
-     * @return \Symfony\Component\HttpFoundation\BinaryFileResponse
-     */
-    public function telecharger(Request $request, $fichier)
-    {
-        $pathToFile = public_path() . '/files/partitions/' . $fichier;
-
-        return response()->download($pathToFile);
-
     }
 }

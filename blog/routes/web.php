@@ -27,8 +27,15 @@ Route::get('accueil', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@index')->name('accueil');
 
 Route::get('/partitions', 'PartitionsController@index');
 
 Route::get('/partitions/telecharger/{fichier}', 'PartitionsController@telecharger');
+
+
+Route::get('add', function(){
+    return view('partitionsAjouter');
+});
+Route::post('/partitions/add', 'PartitionsController@partitionsAjouter')->name('partitionsAjouter');
+
