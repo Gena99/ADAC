@@ -29,13 +29,11 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('accueil');
 
-Route::get('/partitions', 'PartitionsController@index');
+Route::get('/partitions', 'PartitionsController@index')->name('partitions');
 
 Route::get('/partitions/telecharger/{fichier}', 'PartitionsController@telecharger');
 
 
-Route::get('add', function(){
-    return view('partitionsAjouter');
-});
-Route::post('/partitions/add', 'PartitionsController@partitionsAjouter')->name('partitionsAjouter');
+Route::get('partitions/ajouter', 'PartitionsController@create');
+Route::post('/partitions/store', 'PartitionsController@store')->name('storePartitions');
 

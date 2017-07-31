@@ -26,7 +26,7 @@ class PartitionsController extends Controller
      */
     public function create()
     {
-        return view('infos');
+        return view('partitionsAjouter');
     }
 
     /**
@@ -37,7 +37,18 @@ class PartitionsController extends Controller
      */
     public function store(Request $request)
     {
-        return 'Le nom est ' . $request->input('nom');
+        $partition = new Partition;
+        $partition->artiste = $request->input('auteur');
+        $partition->titre = $request->input('titre');
+        $partition->fichier = '';
+        //$partition->fill(['auteur' => $request->input('auteur'), 'titre'=> $request->input('titre')]);
+        $partition->save();
+        // si succès
+        return redirect('partitions');
+
+        //TODO : gestion ds erreurs > si erreur réafficher formulaire avec erreurs
+        // return back()->withInput(); // ???
+
     }
 
     /**
