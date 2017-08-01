@@ -25,6 +25,9 @@ Route::get('accueil', function () {
 	return view('accueil');
 });
 
+Route::get('greeting', function () {
+	return view('welcome', ['name' => 'Samantha']);
+});
 
 Auth::routes();
 

@@ -37,28 +37,6 @@ class Handler extends ExceptionHandler
     }
 
     /**
-     * Render an exception into an HTTP response.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \Exception  $e
-     * @return \Illuminate\Http\Response
-     */
-    public function render($request, Exception $e)
-    {
-        if ($this->isHttpException($e))
-        {
-            return $this->renderHttpException($e);
-        }
-
-        if (config('app.debug'))
-        {
-            //return $this->renderExceptionWithWhoops($e);
-        }
-
-        return parent::render($request, $e);
-    }
-
-    /**
      * Render an exception using Whoops.
      * 
      * @param  \Exception $e
