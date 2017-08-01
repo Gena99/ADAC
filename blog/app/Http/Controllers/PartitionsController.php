@@ -37,11 +37,28 @@ class PartitionsController extends Controller
      */
     public function store(Request $request)
     {
+        // validation du formulaire
+        $this->validate($request, [
+            'artiste' => 'required|max:255',
+            'titre' => 'required|max:255',
+        ]);
+
+        if (!$request->hasFile('fichier')) {
+            // TODO : déclarer une erreur à afficher dans le formulaire
+            return redirect()->back();
+        }
+
+
         $partition = new Partition;
-        $partition->artiste = $request->input('auteur');
+        $partition->artiste = $request->input('artiste');
         $partition->titre = $request->input('titre');
-        $partition->fichier = '';
-        //$partition->fill(['auteur' => $request->input('auteur'), 'titre'=> $request->input('titre')]);
+        $partition->fichier = $partition->artiste . '_' . $partition->titre . '.pdf';
+
+        // traitement du fichier uploadé
+        $uploadedFile = $request->file('fichier');
+        $destination = public_path() . '/files/partitions/' . $partition->fichier;
+        move_uploaded_file($uploadedFile->path(), $destination);
+
         $partition->save();
         // si succès
         return redirect('partitions');
@@ -93,7 +110,8 @@ class PartitionsController extends Controller
      */
     public function destroy($id)
     {
-        //
+        Partition::destroy(array($id));
+        return redirect('partitions');
     }
 
 

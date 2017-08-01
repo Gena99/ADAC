@@ -34,6 +34,8 @@ Route::get('/partitions', 'PartitionsController@index')->name('partitions');
 Route::get('/partitions/telecharger/{fichier}', 'PartitionsController@telecharger');
 
 
-Route::get('partitions/ajouter', 'PartitionsController@create');
+Route::get('/partitions/ajouter', 'PartitionsController@create')->name('ajouterPartition');
 Route::post('/partitions/store', 'PartitionsController@store')->name('storePartitions');
+
+Route::get('/partitions/supprimer/{id}', 'PartitionsController@destroy')->name('supprimerPartition');
 
