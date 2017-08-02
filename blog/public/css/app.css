@@ -8360,6 +8360,17 @@ button.close {
   margin-bottom: 80px;
 }
 
+.nav-btn a:link,
+.nav-btn a:visited {
+  color: #F98C00 !important;
+  font-weight: bold;
+}
+
+.nav-btn a:link,
+.nav-btn a:hover {
+  color: #33383b !important;
+}
+
 .links > a {
   color: #B6175F;
   padding: 0 25px;
@@ -8369,24 +8380,11 @@ button.close {
   -webkit-text-decoration: #F98C00;
           text-decoration: #F98C00;
   text-transform: uppercase;
-}
-
-.liens {
-  color: #B6175F;
-  padding: 0 25px;
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: .1rem;
-  -webkit-text-decoration: #B6175F;
-          text-decoration: #B6175F;
-  text-transform: uppercase;
+  text-align: center;
 }
 
 .navbar-brand {
   margin-bottom: 20px;
-}
-
-#bs-example-navbar-collapse-1 {
   color: #F98C00;
 }
 

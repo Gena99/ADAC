@@ -11,13 +11,13 @@
     <title>ADAC-LIVE</title>
 
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css
     " rel="stylesheet">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
 </head>
 <body class="fond">
@@ -39,15 +39,15 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="/accueil">Accueil <span class="sr-only">(current)</span></a></li>
-                        <li><a href="/partitions">Partitions</a></li>
-                        <li><a href="/activités">Activités</a></li>
-                        <li><a href="/association">L'association</a></li>
-                        <li><a href="/ecoles">Les écoles</a></li>
-                        <li><a href="/groupes">Les groupes</a></li>
-                        <li><a href="/galerie">Galerie</a></li>
-                        <li><a href="/contact">Contact</a></li>
-                        <li><a href="/presse">Presse</a></li>
+                        <li class="active nav-btn"><a href="/accueil">Accueil <span class="sr-only">(current)</span></a></li>
+                        <li class="nav-btn"><a href="/partitions">Partitions</a></li>
+                        <li class="nav-btn"><a href="/activités">Activités</a></li>
+                        <li class="nav-btn"><a href="/association">L'association</a></li>
+                        <li class="nav-btn"><a href="/ecoles">Les écoles</a></li>
+                        <li class="nav-btn"><a href="/groupes">Les groupes</a></li>
+                        <li class="nav-btn"><a href="/galerie">Galerie</a></li>
+                        <li class="nav-btn"><a href="/contact">Contact</a></li>
+                        <li class="nav-btn"><a href="/presse">Presse</a></li>
 
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
