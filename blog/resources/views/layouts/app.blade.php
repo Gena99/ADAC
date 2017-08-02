@@ -20,7 +20,7 @@
 
 
 </head>
-<body>
+<body class="fond">
     <div id="app">
         <nav class="navbar navbar-default">
             <div class="container-fluid">
@@ -32,7 +32,8 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">Logo</a>
+
+                    <a class="navbar-brand" href="#"><img src= "images/LogoADACLiveFinalBD3.png"></a>
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
@@ -42,11 +43,11 @@
                         <li><a href="/partitions">Partitions</a></li>
                         <li><a href="/activités">Activités</a></li>
                         <li><a href="/association">L'association</a></li>
-                        <li><a href="ecoles">Les écoles</a></li>
-                        <li><a href="groupes">Les groupes</a></li>
-                        <li><a href="galerie">Galerie</a></li>
-                        <li><a href="contact">Contact</a></li>
-                        <li><a href="presse">Presse</a></li>
+                        <li><a href="/ecoles">Les écoles</a></li>
+                        <li><a href="/groupes">Les groupes</a></li>
+                        <li><a href="/galerie">Galerie</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                        <li><a href="/presse">Presse</a></li>
 
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>

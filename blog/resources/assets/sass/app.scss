@@ -7,3 +7,38 @@
 
 // Bootstrap
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+.fond {
+  background-color: #33383b;
+}
+.partition{
+  color: #F98C00;
+  text-align: center;
+  margin-bottom : 80px;
+}
+
+.links > a {
+  color: #B6175F;
+  padding: 0 25px;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: .1rem;
+  text-decoration: #F98C00;
+  text-transform: uppercase;
+
+}
+.liens{
+  color: #B6175F;
+  padding: 0 25px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: .1rem;
+  text-decoration: #B6175F;
+  text-transform: uppercase;
+}
+.navbar-brand{
+  margin-bottom:20px;
+}
+#bs-example-navbar-collapse-1{
+  color: #F98C00;
+}
