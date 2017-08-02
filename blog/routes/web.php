@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-	return view('welcome');
+	return view('accueil');
 });
 
 /*
@@ -21,9 +21,7 @@ Route::get('/', function () {
 })->name('backerror');
 */
 
-Route::get('accueil', function () {
-	return view('accueil');
-});
+
 
 Auth::routes();
 
