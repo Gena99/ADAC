@@ -39,3 +39,6 @@ Route::post('/partitions/store', 'PartitionsController@store')->name('storeParti
 
 Route::get('/partitions/supprimer/{id}', 'PartitionsController@destroy')->name('supprimerPartition');
 
+// Routes pour les mails (formulaire contact)
+Route::get('/contact', 'ContactController@show');
+Route::post('/contact', 'ContactController@mailToAdmin');
