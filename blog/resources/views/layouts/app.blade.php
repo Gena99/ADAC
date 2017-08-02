@@ -33,7 +33,7 @@
                         <span class="icon-bar"></span>
                     </button>
 
-                    <a class="navbar-brand" href="#"><img src= "images/LogoADACLiveFinalBD3.png"></a>
+                    <a class="navbar-brand" href="#"><img src= "/images/LogoADACLiveFinalBD3.png"></a>
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
@@ -41,7 +41,7 @@
                     <ul class="nav navbar-nav">
                         <li class="active nav-btn"><a href="/accueil">Accueil <span class="sr-only">(current)</span></a></li>
                         <li class="nav-btn"><a href="/partitions">Partitions</a></li>
-                        <li class="nav-btn"><a href="/activités">Activités</a></li>
+                        <li class="nav-btn"><a href="/activites">Activités</a></li>
                         <li class="nav-btn"><a href="/association">L'association</a></li>
                         <li class="nav-btn"><a href="/ecoles">Les écoles</a></li>
                         <li class="nav-btn"><a href="/groupes">Les groupes</a></li>

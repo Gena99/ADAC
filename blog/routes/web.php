@@ -39,3 +39,7 @@ Route::post('/partitions/store', 'PartitionsController@store')->name('storeParti
 
 Route::get('/partitions/supprimer/{id}', 'PartitionsController@destroy')->name('supprimerPartition');
 
+Route::get('/activites', function(){
+    return view('activites');
+});
+
