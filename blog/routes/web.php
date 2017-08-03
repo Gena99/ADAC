@@ -36,7 +36,7 @@ Route::get('/partitions/ajouter', 'PartitionsController@create')->name('ajouterP
 Route::post('/partitions/store', 'PartitionsController@store')->name('storePartitions');
 
 Route::get('/partitions/supprimer/{id}', 'PartitionsController@destroy')->name('supprimerPartition');
-
+//routes pour le menu
 
 Route::get('/activites', function(){
     return view('activites');
@@ -45,12 +45,43 @@ Route::get('/activites', function(){
 Route::get('/association', function(){
     return view('association');
 });
-Route::get('/ecole', function(){
+Route::get('/ecoles', function(){
     return view('ecole');
 });
-Route::get('/groupe', function(){
+Route::get('/groupes', function(){
     return view('groupe');
 });
+Route::get('/galerie', function(){
+    return view('galerie');
+});
+
+Route::get('/presse', function(){
+    return view('presse');
+});
+//routes pour les écoles
+Route::get('/clarac', function(){
+    return view('clarac');
+});
+
+
+Route::get('/encausse-les-thermes', function(){
+    return view('encausse-les-thermes');
+});
+
+Route::get('/castelnau-magnoac', function(){
+    return view('castelnau-magnoac');
+});
+Route::get('/boulogne-sur-gesse', function(){
+    return view('boulogne-sur-gesse');
+});
+
+Route::get('/montrejeau', function(){
+    return view('montrejeau');
+});
+
+
+
+
 
 // Routes pour les mails (formulaire contact)
 Route::get('/contact', 'ContactController@show');
