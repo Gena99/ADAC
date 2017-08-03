@@ -65,8 +65,8 @@
                     <ul class="nav navbar-nav navbar-right">
                         @if (Auth::guest())
 
-                            <li><a href="{{ route('login') }}">Connexion</a></li>
-                            <li><a href="{{ route('register') }}">Inscription</a></li>
+                            <li class="nav-btn"><a href="{{ route('login') }}">Connexion</a></li>
+                            <li class="nav-btn"><a href="{{ route('register') }}">Inscription</a></li>
 
 
                         @else

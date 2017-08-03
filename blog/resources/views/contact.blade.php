@@ -2,7 +2,7 @@
 @section('content')
 
 <div class="container">
-	<h1 class="mb-2 text-center">Nous Contacter</h1>
+	<h1 class="partition">Nous Contacter</h1>
 	@if(session('message'))
 	<div class='alert alert-success'>
 		{{ session('message') }}

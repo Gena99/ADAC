@@ -45,13 +45,19 @@ Route::get('/activites', function(){
 Route::get('/association', function(){
     return view('association');
 });
-Route::get('/ecole', function(){
+Route::get('/ecoles', function(){
     return view('ecole');
 });
-Route::get('/groupe', function(){
+Route::get('/groupes', function(){
     return view('groupe');
 });
+Route::get('/galerie', function(){
+    return view('galerie');
+});
 
+Route::get('/presse', function(){
+    return view('presse');
+});
 // Routes pour les mails (formulaire contact)
 Route::get('/contact', 'ContactController@show');
 Route::post('/contact', 'ContactController@mailToAdmin');
