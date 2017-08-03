@@ -41,3 +41,13 @@ Route::get('/activites', function(){
     return view('activites');
 });
 
+Route::get('/association', function(){
+    return view('association');
+});
+Route::get('/ecole', function(){
+    return view('ecole');
+});
+Route::get('/groupe', function(){
+    return view('groupe');
+});
+
