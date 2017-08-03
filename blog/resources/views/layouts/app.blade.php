@@ -50,7 +50,7 @@
                         <li class="nav-btn"><a href="/presse">Presse</a></li>
 
                         <li class="nav-btn">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Les écoles <span class="caret"></span></a>
+                            <a href="ecoles" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Les écoles <span class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li class="nav-btn"><a href="clarac">Clarac</a></li>
                                 <li class="nav-btn"><a href="castelnau-magnoac">Castelnau-Magnoac</a></li>
