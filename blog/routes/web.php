@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-	return view('welcome');
+	return view('accueil');
 });
 
 /*
@@ -21,9 +21,7 @@ Route::get('/', function () {
 })->name('backerror');
 */
 
-Route::get('accueil', function () {
-	return view('accueil');
-});
+
 
 Auth::routes();
 
@@ -38,6 +36,21 @@ Route::get('/partitions/ajouter', 'PartitionsController@create')->name('ajouterP
 Route::post('/partitions/store', 'PartitionsController@store')->name('storePartitions');
 
 Route::get('/partitions/supprimer/{id}', 'PartitionsController@destroy')->name('supprimerPartition');
+
+
+Route::get('/activites', function(){
+    return view('activites');
+});
+
+Route::get('/association', function(){
+    return view('association');
+});
+Route::get('/ecole', function(){
+    return view('ecole');
+});
+Route::get('/groupe', function(){
+    return view('groupe');
+});
 
 // Routes pour les mails (formulaire contact)
 Route::get('/contact', 'ContactController@show');
