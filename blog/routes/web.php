@@ -37,7 +37,21 @@ Route::post('/partitions/store', 'PartitionsController@store')->name('storeParti
 
 Route::get('/partitions/supprimer/{id}', 'PartitionsController@destroy')->name('supprimerPartition');
 
+
 Route::get('/activites', function(){
     return view('activites');
 });
 
+Route::get('/association', function(){
+    return view('association');
+});
+Route::get('/ecole', function(){
+    return view('ecole');
+});
+Route::get('/groupe', function(){
+    return view('groupe');
+});
+
+// Routes pour les mails (formulaire contact)
+Route::get('/contact', 'ContactController@show');
+Route::post('/contact', 'ContactController@mailToAdmin');
