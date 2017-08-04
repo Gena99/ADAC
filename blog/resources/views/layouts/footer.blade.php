@@ -65,17 +65,17 @@
             <div class="col-md-4 col-xs-4">
                 <div>
                     <i class="fa fa-map-marker"></i>
-                    <p><span>21 Revolution Street</span> Paris, France</p>
+                    <p><span></span>Clarac Haute Garonne</p>
                 </div>
 
                 <div>
                     <i class="fa fa-phone"></i>
-                    <p>+1 555 123456</p>
+                    <p>06 81 56 91 48</p>
                 </div>
 
                 <div>
                     <i class="fa fa-envelope"></i>
-                    <p><a href="mailto:support@company.com">support@company.com</a></p>
+                    <p><a href="mailto:salaneuve.patrick@wanadoo.fr">salaneuve.patrick@wanadoo.fr</a></p>
                 </div>
 
                 <div class="footer-icons">
