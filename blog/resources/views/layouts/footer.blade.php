@@ -3,7 +3,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-4 col-xs-4">
-                <h3>Company<span>logo</span></h3>
+                <h3><img src="/images/LogoADACLiveFinalBD3.png"/></h3>
 
                 <p class="footer-links">
                     <a href="#">Accueil</a>
