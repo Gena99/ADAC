@@ -6,7 +6,6 @@ use Exception;
 use Illuminate\Auth\AuthenticationException;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 
-
 class Handler extends ExceptionHandler
 {
     /**
@@ -37,12 +36,12 @@ class Handler extends ExceptionHandler
     }
 
     /**
-     * Render an exception using Whoops.
-     * 
-     * @param  \Exception $e
+     * Render an exception into an HTTP response.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  \Exception  $e
      * @return \Illuminate\Http\Response
      */
-
     public function render($request, Exception $e)
     {
         if ($this->isHttpException($e))
@@ -52,7 +51,7 @@ class Handler extends ExceptionHandler
 
         if (config('app.debug'))
         {
-            return $this->renderExceptionWithWhoops($e);
+            //return $this->renderExceptionWithWhoops($e);
         }
 
         return parent::render($request, $e);

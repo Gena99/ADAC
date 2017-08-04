@@ -796,14 +796,14 @@ window.Vue = __webpack_require__(35);
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
-$('#myCarousel').carousel({
-  interval: 2000
-});
 
 Vue.component('example', __webpack_require__(36));
 
 var app = new Vue({
   el: '#app'
+});
+$('#myCarousel').carousel({
+  interval: 2000
 });
 
 /***/ }),
@@ -41803,7 +41803,7 @@ var Component = __webpack_require__(37)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "/home/aymeric/Downloads/GitHUB/Projet Pédago/ADAC cassé scss/ADAC/blog/resources/assets/js/components/Example.vue"
+Component.options.__file = "/home/aymeric/Downloads/GitHUB/ADAC/blog/resources/assets/js/components/Example.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Example.vue: functional components are not supported with templates, they should use render functions.")}
 
