@@ -11,6 +11,7 @@
 |
 */
 
+//ini_set ( 'upload_max_filesize' , '0.1M' );
 $app = new Illuminate\Foundation\Application(
     realpath(__DIR__.'/../')
 );
