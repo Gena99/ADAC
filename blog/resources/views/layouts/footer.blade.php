@@ -6,20 +6,20 @@
                 <h3>Company<span>logo</span></h3>
 
                 <p class="footer-links">
-                    <a href="#">Home</a>
+                    <a href="#">Accueil</a>
                     ·
-                    <a href="#">Blog</a>
+                    <a href="#">Association</a>
                     ·
-                    <a href="#">Pricing</a>
+                    <a href="#">Galerie</a>
                     ·
-                    <a href="#">About</a>
+                    <a href="#">L'association</a>
                     ·
                     <a href="#">Faq</a>
                     ·
                     <a href="#">Contact</a>
                 </p>
 
-                <p class="footer-company-name">Company Name &copy; 2015</p>
+                <p class="footer-company-name">ADAC&copy; 2017</p>
             </div>
 
             <div class="col-md-4 col-xs-4">
