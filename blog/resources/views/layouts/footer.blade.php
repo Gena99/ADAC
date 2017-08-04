@@ -1,0 +1,92 @@
+
+<footer class="footerAdac">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-xs-4">
+                <h3>Company<span>logo</span></h3>
+
+                <p class="footer-links">
+                    <a href="#">Home</a>
+                    ·
+                    <a href="#">Blog</a>
+                    ·
+                    <a href="#">Pricing</a>
+                    ·
+                    <a href="#">About</a>
+                    ·
+                    <a href="#">Faq</a>
+                    ·
+                    <a href="#">Contact</a>
+                </p>
+
+                <p class="footer-company-name">Company Name &copy; 2015</p>
+            </div>
+
+            <div class="col-md-4 col-xs-4">
+
+                <!-- Slider -->
+                <div class="row-fluid">
+                    <div class="span9" id="slider">
+                        <!-- Top part of the slider -->
+                        <div class="row-fluid">
+                            <div class="span2" id="carousel-bounding-box">
+                                <div id="myCarousel" class="carousel slide">
+                                    <!-- Carousel items -->
+                                    <div class="carousel-inner">
+                                        <div class="active item" data-slide-number="0"><img class="img-rounded"
+                                                                                            src="http://lorempixel.com/120/100">
+                                        </div>
+                                        <div class="item" data-slide-number="1"><img class="img-rounded"
+                                                                                     src="http://lorempixel.com/120/100/technics/1">
+                                        </div>
+                                        <div class="item" data-slide-number="2"><img class="img-rounded"
+                                                                                     src="http://lorempixel.com/120/100/business/1">
+                                        </div>
+                                        <div class="item" data-slide-number="3"><img class="img-rounded"
+                                                                                     src="http://lorempixel.com/120/100/city">
+                                        </div>
+                                        <div class="item" data-slide-number="4"><img class="img-rounded"
+                                                                                     src="http://lorempixel.com/120/100/city/1">
+                                        </div>
+                                        <div class="item" data-slide-number="5"><img class="img-rounded"
+                                                                                     src="http://lorempixel.com/120/100">
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div> <!--/Slider-->
+            </div>
+            <div class="col-md-4 col-xs-4">
+                <div>
+                    <i class="fa fa-map-marker"></i>
+                    <p><span>21 Revolution Street</span> Paris, France</p>
+                </div>
+
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <p>+1 555 123456</p>
+                </div>
+
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <p><a href="mailto:support@company.com">support@company.com</a></p>
+                </div>
+
+                <div class="footer-icons">
+
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                    <a href="#"><i class="fa fa-github"></i></a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

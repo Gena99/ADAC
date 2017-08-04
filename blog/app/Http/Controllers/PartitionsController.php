@@ -122,6 +122,7 @@ class PartitionsController extends Controller
      */
     public function telecharger(Request $request, $fichier)
     {
+        //TODO : voir directive ini_set ( 'upload_max_filesize' , '0.1M' ) dans /bootstrap/app.php;
         $pathToFile = public_path() . '/files/partitions/' . $fichier;
 
         return response()->download($pathToFile);
