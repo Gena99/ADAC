@@ -4,12 +4,12 @@
                                                           width="30%" height="30%"></a></h3>
     </div>
     <div class="panel-body">
-        @inject('News', 'App\News')
+       {{--  @inject('News', 'App\News')
         <ul>
             @foreach (\App\News::all() as $news)
                 <li>{{ $news->titre }}</li>
             @endforeach
-        </ul>
+        </ul> --}}
     </div>
 </div>
 

@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\News;
+use App\Nouvelle;
 use Illuminate\Http\Request;
 
-class NewsController extends Controller
+class nouvellesController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,37 +14,46 @@ class NewsController extends Controller
      */
     public function index()
     {
-        //
+        $nouvelles= Nouvelle::all();
+        return view('accueil', ['nouvelles' => $nouvelles]);
     }
 
     /**
-     * Show the form for creating a new resource.
+     * Show the form for creating a nouvelle resource.
      *
      * @return \Illuminate\Http\Response
      */
     public function create()
     {
-        //
+        return view('ajoutnouvelles');
     }
 
     /**
-     * Store a newly created resource in storage.
+     * Store a nouvellely created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
     {
-        //
+        $nouvelles= new Nouvelle;
+        $nouvelles->titre=$request->input('titre');
+        $nouvelles->resume=$request->input('resume');
+        $nouvelles->texte=$request->input('texte');
+        $nouvelles->evenement=$request->input('evenement');
+        $nouvelles->date=$request->input('date');
+        $nouvelles->save();
+        return redirect('ajoutnouvelles');
+
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\News  $news
+     * @param  \App\nouvelles  $nouvelles
      * @return \Illuminate\Http\Response
      */
-    public function show(News $news)
+    public function show($id)
     {
         //
     }
@@ -52,10 +61,10 @@ class NewsController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\News  $news
+     * @param  \App\nouvelles  $nouvelles
      * @return \Illuminate\Http\Response
      */
-    public function edit(News $news)
+    public function edit($id)
     {
         //
     }
@@ -64,10 +73,10 @@ class NewsController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\News  $news
+     * @param  \App\nouvelles  $nouvelles
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, News $news)
+    public function update(Request $request, $id)
     {
         //
     }
@@ -75,11 +84,12 @@ class NewsController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\News  $news
+     * @param  \App\nouvelles  $nouvelles
      * @return \Illuminate\Http\Response
      */
-    public function destroy(News $news)
+    public function destroy($id)
     {
-        //
+        Nouvelle::destroy(array($id));
+        return redirect('ajoutnouvelles');
     }
 }

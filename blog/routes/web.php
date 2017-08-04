@@ -11,31 +11,22 @@
 |
 */
 
-Route::get('/', function () {
-	return view('accueil');
-});
+
 
 /*
  Route::get('/backerror', function () {
     return redirect()->back();
 })->name('backerror');
 */
-
-
-
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('accueil');
 
 Route::get('/partitions', 'PartitionsController@index')->name('partitions');
-
-Route::get('/partitions/telecharger/{fichier}', 'PartitionsController@telecharger');
-
-
 Route::get('/partitions/ajouter', 'PartitionsController@create')->name('ajouterPartition');
 Route::post('/partitions/store', 'PartitionsController@store')->name('storePartitions');
-
 Route::get('/partitions/supprimer/{id}', 'PartitionsController@destroy')->name('supprimerPartition');
+Route::get('/partitions/telecharger/{fichier}', 'PartitionsController@telecharger');
 //routes pour le menu
 
 Route::get('/activites', function(){
@@ -86,3 +77,10 @@ Route::get('/montrejeau', function(){
 // Routes pour les mails (formulaire contact)
 Route::get('/contact', 'ContactController@show');
 Route::post('/contact', 'ContactController@mailToAdmin');
+
+
+//Routes pour les news
+Route::get('/', 'NouvellesController@index')->name('accueil');
+Route::get('/ajoutnouvelles', 'NouvellesController@create')->name('ajoutNouvelles');
+Route::post('/ajoutNouvelles', 'NouvellesController@store')->name('stockNouvelles');
+Route::get('/nouvelles/delete/{id}', 'NouvellesController@destroy')->name('deleteNouvelles');
