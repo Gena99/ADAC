@@ -92,8 +92,15 @@
         </div>
     </nav>
     <br><br><br>
-    @yield('content')
-    <br><br><br>
+    <div class="website">
+        <div class="content">    
+            @yield('content')
+        </div>
+        <div class="side"><iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FADACLiive%2F&tabs=timeline&width=300&height=600&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="300" height="600" style="border:none;overflow:hidden" scrolling="yes" frameborder="0" allowTransparency="true">
+        </iframe>
+    </div>
+</div>
+<br><br><br>
 </div><footer class="footer-distributed">
 
 <div class="footer-left">

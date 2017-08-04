@@ -41,7 +41,7 @@ class PartitionsController extends Controller
         $this->validate($request, [
             'artiste' => 'required|max:255',
             'titre' => 'required|max:255',
-        ]);
+            ]);
 
         if (!$request->hasFile('fichier')) {
             // TODO : déclarer une erreur à afficher dans le formulaire
