@@ -8358,6 +8358,7 @@ button.close {
   color: #F98C00;
   text-align: center;
   margin-bottom: 80px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .nav-btn a:link,
@@ -8415,3 +8416,16 @@ button.close {
   height: 50px;
   background-color: #292c2f;
 }
+
+.mail {
+  color: #F98C00;
+}
+
+.titre {
+  color: #B6175F;
+}
+
+.texte {
+  color: white;
+}
+

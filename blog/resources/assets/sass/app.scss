@@ -18,6 +18,7 @@ $flashColor: #A72C5E;
   color: #F98C00;
   text-align: center;
   margin-bottom : 80px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .nav-btn a:link, .nav-btn a:visited{
   color: #F98C00 !important;
@@ -47,6 +48,7 @@ $flashColor: #A72C5E;
   background-color: $fondFooter;
   padding: 30px 25px;
   margin-top: 30px;
+
 }
 
 /* If you don't want the footer to be responsive, remove these media queries */
@@ -70,4 +72,14 @@ $flashColor: #A72C5E;
 .bandeSeparationMenu {
   height: 50px;
   background-color: $fondFooter;
+}
+.mail{
+  color: #F98C00
+
+}
+.titre{
+  color: #B6175F;
+}
+.texte{
+  color: white;
 }

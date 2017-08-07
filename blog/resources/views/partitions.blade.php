@@ -10,10 +10,10 @@
     <table class="table table-hover">
         <thead>
         <tr>
-            <th>Artiste</th>
-            <th>Titre</th>
-            <th>Télécharger</th>
-            <th>Supprimer</th>
+            <th class= "titre">Artiste</th>
+            <th class= "titre">Titre</th>
+            <th class= "titre">Télécharger</th>
+            <th class= "titre">Supprimer</th>
         </tr>
         </thead>
         <tbody>

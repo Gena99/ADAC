@@ -5,18 +5,18 @@
             <div class="col-md-4 col-xs-4">
                 <h3><img src="/images/LogoADACLiveFinalBD3.png"/></h3>
 
-                <p class="footer-links">
-                    <a href="#">Accueil</a>
+                <p class="partition">
+                    <a href="partitions">Partitions</a>
                     ·
-                    <a href="#">Association</a>
+                    <a href="association">Association</a>
                     ·
-                    <a href="#">Galerie</a>
+                    <a href="galerie">Galerie</a>
                     ·
-                    <a href="#">L'association</a>
+                    <a href="activites">Activités</a>
                     ·
-                    <a href="#">Faq</a>
+                    <a href="Presse">Presse</a>
                     ·
-                    <a href="#">Contact</a>
+                    <a href="Contact">Contact</a>
                 </p>
 
                 <p class="footer-company-name">ADAC&copy; 2017</p>
@@ -75,7 +75,7 @@
 
                 <div>
                     <i class="fa fa-envelope"></i>
-                    <p><a href="mailto:salaneuve.patrick@wanadoo.fr">salaneuve.patrick@wanadoo.fr</a></p>
+                    <p class="mail"><a href="mailto:salaneuve.patrick@wanadoo.fr">salaneuve.patrick@wanadoo.fr</a></p>
                 </div>
 
                 <div class="footer-icons">
