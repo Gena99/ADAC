@@ -3,23 +3,23 @@
     <div class="container">
         <div class="row">
             <div class="col-md-4 col-xs-4">
-                <h3>Company<span>logo</span></h3>
+                <h3><img src="/images/LogoADACLiveFinalBD3.png"/></h3>
 
-                <p class="footer-links">
-                    <a href="#">Home</a>
+                <p class="partition">
+                    <a href="partitions">Partitions</a>
                     ·
-                    <a href="#">Blog</a>
+                    <a href="association">Association</a>
                     ·
-                    <a href="#">Pricing</a>
+                    <a href="galerie">Galerie</a>
                     ·
-                    <a href="#">About</a>
+                    <a href="activites">Activités</a>
                     ·
-                    <a href="#">Faq</a>
+                    <a href="Presse">Presse</a>
                     ·
-                    <a href="#">Contact</a>
+                    <a href="Contact">Contact</a>
                 </p>
 
-                <p class="footer-company-name">Company Name &copy; 2015</p>
+                <p class="footer-company-name">ADAC&copy; 2017</p>
             </div>
 
             <div class="col-md-4 col-xs-4">
@@ -65,17 +65,17 @@
             <div class="col-md-4 col-xs-4">
                 <div>
                     <i class="fa fa-map-marker"></i>
-                    <p><span>21 Revolution Street</span> Paris, France</p>
+                    <p><span></span>Clarac Haute Garonne</p>
                 </div>
 
                 <div>
                     <i class="fa fa-phone"></i>
-                    <p>+1 555 123456</p>
+                    <p>06 81 56 91 48</p>
                 </div>
 
                 <div>
                     <i class="fa fa-envelope"></i>
-                    <p><a href="mailto:support@company.com">support@company.com</a></p>
+                    <p class="mail"><a href="mailto:salaneuve.patrick@wanadoo.fr">salaneuve.patrick@wanadoo.fr</a></p>
                 </div>
 
                 <div class="footer-icons">
